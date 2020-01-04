@@ -12,8 +12,6 @@ public class SeleniumDemo {
 	
 public static void main(String[] args) throws InterruptedException {
 	
-	
-	
 
 	 System.setProperty("webdriver.gecko.driver", "C:\\Jar\\driver\\geckodriver.exe");
    

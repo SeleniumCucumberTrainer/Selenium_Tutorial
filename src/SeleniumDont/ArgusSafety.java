@@ -19,18 +19,21 @@ public class ArgusSafety {
 		 caps.setCapability("ignoreZoomSetting", true);
 		 //driver = new InternetExplorerDriver(caps);
           WebDriver driver = new InternetExplorerDriver(caps);
+          
+          driver.manage().window().maximize();
+          
           driver.get("http://slc12qqv.us.oracle.com:8083/");
           
           
-          Thread.sleep(3000);
+          
+          
+          Thread.sleep(10000);
           
           driver.switchTo().frame("fm_MainApp");
           
          
           
           driver.findElement(By.cssSelector("#loginId_id")).sendKeys("admin");
-          
-         
           
           driver.findElement(By.id("password_id")).sendKeys("manager");
           
